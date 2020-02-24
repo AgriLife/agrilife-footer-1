@@ -1,0 +1,17 @@
+{
+    "name": "agrilife/agrilife-footer-1",
+    "description": "Footer design #1 for AgriLife websites.",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Zachary Watkins",
+            "email": "zachary.watkins@ag.tamu.edu"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^1.0"
+  }
+}
