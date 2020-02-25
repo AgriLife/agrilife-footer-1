@@ -84,6 +84,11 @@
 	}
 
 	.widget {
+		h4 {
+			font-size: 1.5rem;
+			margin-bottom: 0;
+		}
+
 		.menu-item {
 			width: 50%;
 			margin-top: $paragraph-margin-bottom / 3;
@@ -114,15 +119,12 @@
 		}
 	}
 
-	.widget_nav_menu {
-		h4 {
-			font-size: 1.5rem;
-			margin-bottom: 0;
-		}
+	.widget_nav_menu .menu-primary-container {
+		@include separator(1rem, before);
+	}
 
-		.menu-primary-container {
-			@include separator(1rem, before);
-		}
+	.textwidget {
+		@include separator(1rem, before);
 	}
 
 	.widget_a2a_share_save_widget {
@@ -191,10 +193,8 @@
 			margin-top: 15px;
 		}
 
-		.widget_nav_menu {
-			h4 {
-				font-size: 2rem;
-			}
+		.widget h4 {
+			font-size: 2rem;
 		}
 
 		.waa {
