@@ -176,15 +176,12 @@ class Genesis {
 		);
 
 		$logo = sprintf(
-			'<a href="%s" title="Texas A&M AgriLife"><img src="%s" alt="Texas A&M AgriLife" /></a>',
+			'<div class="logo cell medium-order-1"><a href="%s" title="Texas A&M AgriLife"><img src="%s" alt="Texas A&M AgriLife" /></a></div>',
 			trailingslashit( home_url() ),
 			$logo_choices['white']
 		);
 
-		$logo = sprintf(
-			'<div class="logo cell medium-order-1">%s</div>',
-			apply_filters( 'agrilife_footer_1_logo', $logo, $logo_choices['white'], $logo_choices )
-		);
+		$logo = apply_filters( 'agrilife_footer_1_logo', $logo, $logo_choices['white'], $logo_choices );
 
 		echo wp_kses_post( $logo );
 
