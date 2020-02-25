@@ -65,6 +65,7 @@
 		@include breakpoint(medium) {
 			> .grid-x {
 				width: calc(100% + #{$grid-padding-gutters});
+				align-items: start;
 			}
 		}
 	}
@@ -119,12 +120,14 @@
 		}
 	}
 
-	.widget_nav_menu .menu-primary-container {
+	.textwidget {
 		@include separator(1rem, before);
 	}
 
-	.textwidget {
-		@include separator(1rem, before);
+	.widget_nav_menu {
+		.menu-primary-container:first-child {
+			padding-top: 2.7rem;
+		}
 	}
 
 	.widget_a2a_share_save_widget {
@@ -134,6 +137,10 @@
 	@include breakpoint(small only) {
 		.footer-info > .grid-x > .cell + .cell {
 			@include separator(1rem, before);
+		}
+
+		.info.icon-location {
+			display: inline-block;
 		}
 	}
 
@@ -174,10 +181,6 @@
 			flex: 0 1 100%;
 			flex-flow: row wrap;
 			position: relative;
-
-			> .grid-x {
-				align-items: center;
-			}
 		}
 
 		.footer-container p {
@@ -197,5 +200,10 @@
 		.waa {
 			font-size: 1.6rem;
 		}
+
+		.widget_nav_menu .menu-primary-container {
+			@include separator(1rem, before);
+		}
+
 	}
 }
