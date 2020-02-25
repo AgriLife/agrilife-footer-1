@@ -117,7 +117,6 @@ class Genesis {
 				$params[0]['before_widget'] = str_replace( $match[0], "class=\"{$class_output}\"", $params[0]['before_widget'] );
 
 			}
-
 		}
 
 		return $params;
@@ -170,16 +169,15 @@ class Genesis {
 		);
 
 		$logo_choices = array(
-			'white' => 'TAMAgVCwhite.png',
-			'black' => 'TAMAgVCblack.png',
-			'gray'  => 'TAMAgVCgray.png',
-			'color' => 'TAMAgVCm&g.png'
+			'white' => AF1_DIR_URL . 'images/TAMAgVCwhite.png',
+			'black' => AF1_DIR_URL . 'images/TAMAgVCblack.png',
+			'gray'  => AF1_DIR_URL . 'images/TAMAgVCgray.png',
+			'color' => AF1_DIR_URL . 'images/TAMAgVCm&g.png',
 		);
 
 		$logo = sprintf(
-			'<a href="%s" title="Texas A&M AgriLife"><img src="%s%s" alt="Texas A&M AgriLife" /></a>',
+			'<a href="%s" title="Texas A&M AgriLife"><img src="%s" alt="Texas A&M AgriLife" /></a>',
 			trailingslashit( home_url() ),
-			AF1_DIR_URL . 'images/',
 			$logo_choices['white']
 		);
 
