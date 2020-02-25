@@ -132,11 +132,8 @@
 	}
 
 	@include breakpoint(small only) {
-
-		.footer-info {
-			.cell:not(.medium-6) {
-				@include separator(1rem, before);
-			}
+		.footer-info > .grid-x > .cell + .cell {
+			@include separator(1rem, before);
 		}
 	}
 
