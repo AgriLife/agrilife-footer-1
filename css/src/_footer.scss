@@ -52,7 +52,7 @@
 		}
 	}
 
-	.req-links {
+	body & .req-links {
 		@include xy-grid-container;
 		margin: {
 			bottom: 0;
